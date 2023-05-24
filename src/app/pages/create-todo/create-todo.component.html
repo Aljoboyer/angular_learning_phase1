@@ -1,0 +1,11 @@
+<div class="createDiv">
+    <h4>Create Your Todo</h4>
+    <form (ngSubmit)="onSubmit()">
+        <input [(ngModel)]="title" name="title" class="inputField" placeholder="Write title" />
+        <input [(ngModel)]="desc" name="desce" class="inputField" placeholder="Write Description" />
+        <input [(ngModel)]="id" name="id" class="inputField" placeholder="Write Todo id" />
+        <input [(ngModel)]="active" name="active" class="inputField" placeholder="Write Activity" />
+        <button class="addBtn" type="submit">ADD</button>
+    </form>
+    <button (click)="ConsoleClick()" class="testbtn">CONSOLE.LOG</button>
+</div>

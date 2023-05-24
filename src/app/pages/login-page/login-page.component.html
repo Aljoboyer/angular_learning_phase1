@@ -1,0 +1,9 @@
+<div>
+    <h1 class="fw-bold text-center text-primary my-4">Log-in Here</h1>
+    <form name="loginForm" (ngSubmit)="GoToHome()" [formGroup]="reactiveForm">
+        <input [(ngModel)]="email" appearance="fill" formControlName="email" type="email" placeholder="Enter Email" class="mt-4" />
+
+        <input [(ngModel)]="password" appearance="fill" formControlName="password" type="password" placeholder="Enter Password" class="mt-4" />
+        <button class="btn btn-dark text-warning mt-4" type="submit">Login</button>
+    </form>
+</div>

@@ -1,0 +1,43 @@
+
+  <h2 mat-dialog-title>Update User Details</h2>
+  <mat-dialog-content class="mat-typography">
+    <form class="d-flex flex-column" (ngSubmit)="UpdateClick()">
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input [(ngModel)]="name" name="name" [value]="name" class="inputs" matInput>
+        </mat-form-field>
+        
+        <mat-form-field appearance="fill">
+        <mat-label>Age</mat-label>
+        <input [(ngModel)]="age" name="age" [value]="age" class="inputs" matInput>
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill">
+        <mat-label>Phone</mat-label>
+        <input [(ngModel)]="phone" name="phone" [value]="phone" class="inputs" matInput>
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="email" name="email" [value]="email" class="inputs" matInput>
+        </mat-form-field>
+        
+        <mat-form-field appearance="fill">
+        <mat-label>Nationality</mat-label>
+        <input [(ngModel)]="nationality" name="nationality" [value]="nationality" class="inputs" matInput>
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill">
+        <mat-label>Update image</mat-label>
+        <input  class="inputs" matInput>
+        </mat-form-field>
+        <button type="submit" color="accent" mat-button [mat-dialog-close]="false" cdkFocusInitial>Confirm</button>
+    </form>
+
+
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-flat-button color="primary" mat-button [mat-dialog-close]="true">Cancel</button>
+
+  </mat-dialog-actions>
+  

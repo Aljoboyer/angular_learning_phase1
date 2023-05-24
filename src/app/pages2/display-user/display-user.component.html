@@ -1,0 +1,43 @@
+<div>
+    <h1 class="text-center ">All User Here</h1>
+
+    <div *ngIf="users.length > 0" class="usersContainer">
+        <div  class="ms-3" *ngFor="let user of users">
+            <img class="userImg" src="data:image/jpeg;base64,{{user?.profileImg}}" />
+            <h3>{{user?.name}}</h3>
+            <h5>{{user?.age}}</h5>
+            <h5>{{user?.phone}}</h5>
+            <h5>{{user?.email}}</h5>
+            <h5>{{user?.nationality}}</h5>
+            <div class="d-flex flex-row">
+                <button (click)="UpdateHandler(user?._id)" class="btn btn-warning text-dark ">Update</button>
+                <button class="btn btn-danger text-light ms-3" (click)="DeleteHandler(user?._id)"  >Delete</button>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="users.length == 0" class="item ms-4">
+      <ngx-skeleton-loader count="5" animation="progress" [theme]="{ 
+        height: '200px',
+        width: '90%'
+      }"></ngx-skeleton-loader>
+    </div>
+      
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-danger fw-bold fs-4">Are you sure want to delete this item .!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button  type="button" class="btn btn-dark text-light" >Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- data-bs-toggle="modal" data-bs-target="#exampleModal" -->

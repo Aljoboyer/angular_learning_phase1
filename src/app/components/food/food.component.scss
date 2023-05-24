@@ -1,0 +1,42 @@
+.food_img{
+   height: 300px;
+   width: 320px;
+   align-self: center;
+   border-radius: 10px;
+}
+
+.food_card{
+   cursor: pointer;
+   border: solid rgb(206, 205, 205) 1px;
+   border-radius: 10px;
+   padding: 10px;
+   &:hover{
+      border: solid rgb(255, 86, 7) 1px;
+      transition: 0.3s ease-in-out;
+   }
+}
+
+.food_title{
+   color: rgb(146, 48, 3);
+   font-size: 20px;
+   font-weight: bold;
+}
+.icons{
+   color: rgb(19, 1, 65);
+}
+
+.favorite{
+   color: rgb(255, 28, 28);
+}
+.notfav{
+   color: rgb(172, 165, 165);
+}
+
+.star_div{
+   display: flex;
+   flex-direction: row;
+}
+
+.dim_text{
+   color: rgb(167, 173, 173);
+}

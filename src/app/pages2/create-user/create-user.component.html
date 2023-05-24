@@ -1,0 +1,24 @@
+<div class="container my-4 create_user_container d-flex flex-row justify-content-center pb-4">
+    <form  class="user_form" (ngSubmit)="UserFormSubmit()">
+        <h1 class="text-center my-4 fw-bold text-primary">Create User</h1>
+        <label class="labels">Name</label>
+        <input [(ngModel)]="name" name="name" class="inputs" placeholder="User Name" />
+
+        <label class="labels">Age</label>
+        <input [(ngModel)]="age" name="age" class="inputs" placeholder="User Age" />
+
+        <label class="labels">Phone</label>
+        <input [(ngModel)]="phone" name="phone" class="inputs" placeholder="User Phone" />
+
+        <label class="labels">Email</label>
+        <input [(ngModel)]="email" name="email" class="inputs" placeholder="User Email" />
+
+        <label class="labels">Nationality</label>
+        <input [(ngModel)]="nationality" name="nationality" class="inputs" placeholder="Nationality" />
+
+        <label class="labels">Upload image</label>
+        <input type="file"  (change)="OnFileChange($event)" name="profileImg" class="inputs" placeholder="Upload image" />
+
+        <button class="btn btn-primary mt-4" type="submit">Submit</button>
+    </form>
+</div>

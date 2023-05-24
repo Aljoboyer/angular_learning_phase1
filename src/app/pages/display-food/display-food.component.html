@@ -1,0 +1,13 @@
+<section class="food_section container">
+    <h1 class="title my-4 text-center">FOOD FOR FOODIES</h1>
+    <div class="tag_container">
+        <div (click)="TagHandler(tag.name)" class="tag_div" *ngFor="let tag of tags">
+            <p>{{tag.name}} {{tag.count}}</p>
+        </div>
+    </div>
+    <div class="food_container container">
+        <div *ngFor="let food of Foods">
+            <app-food [food]="food" ></app-food>
+        </div>
+    </div>
+</section>

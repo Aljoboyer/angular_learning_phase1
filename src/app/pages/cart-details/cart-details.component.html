@@ -1,0 +1,7 @@
+<h1 class="text-center my-4 fw-bold text-primary">Your Cart Product</h1>
+
+<div class="food_container container">
+    <div *ngFor="let food of cartFood">
+        <app-food [food]="food" ></app-food>
+    </div>
+</div>

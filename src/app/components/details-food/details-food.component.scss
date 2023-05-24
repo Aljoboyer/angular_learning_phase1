@@ -1,0 +1,16 @@
+.detailsimg{
+    height: 400px;
+    width: 700px;
+}
+
+.detailsConatiner{
+    height: 600px;
+    width: 800px;
+    border: solid tomato 1px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

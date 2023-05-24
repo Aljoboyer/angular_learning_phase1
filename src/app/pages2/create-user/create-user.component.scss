@@ -1,0 +1,24 @@
+.user_form{
+    width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px rgb(255, 70, 38);
+}
+
+.labels{
+    display: block;
+    font-size: 16px;
+    color: rgb(143, 24, 3);
+    margin-top: 15px;
+    font-weight: bold;
+}
+.inputs{
+    border: solid 1px gray;
+    outline: none;
+    display: block;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 40px;
+    padding-left: 15px;
+}
